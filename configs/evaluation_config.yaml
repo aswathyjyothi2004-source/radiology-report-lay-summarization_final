@@ -1,0 +1,25 @@
+# Evaluation configuration
+
+metrics:
+  text_generation:
+    - "BLEU"
+    - "ROUGE-1"
+    - "ROUGE-2"
+    - "ROUGE-L"
+    - "METEOR"
+
+  semantic_similarity:
+    - "BERTScore"
+    - "Semantic Similarity"
+
+  readability:
+    - "Flesch-Kincaid Grade Level"
+    - "Dale-Chall Readability"
+    - "Coleman-Liau Index"
+
+  hallucination_estimation:
+    - "NLI-based evaluation"
+
+evaluation_notes:
+  clinical_evaluation: false
+  human_clinical_validation: false
