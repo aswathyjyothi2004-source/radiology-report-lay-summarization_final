@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+token*
+credentials*
+
+# Data, model weights, and generated outputs
+data/
+datasets/
+cache/
+.cache/
+hf_cache/
+wandb/
+mlruns/
+outputs/
+checkpoints/
+adapters/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+
+# Local result files: add only reviewed, permitted, documented exports
+results/**/*
+!results/**/README.md
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

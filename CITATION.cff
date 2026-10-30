@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated research manuscript and the repository version you used."
+title: "Radiology Report Lay Summarization Using Parameter-Efficient Fine-Tuning and Explanation-Aware Knowledge Selection"
+type: software
+version: 0.1.0
+date-released: 2026-10-30
+license: MIT
+repository-code: "https://github.com/<GITHUB-OWNER>/radiology-report-lay-summarization"
+abstract: >-
+  Research code scaffold for text-to-text radiology report lay summarization
+  using compact language models, QLoRA, terminology retrieval, and
+  explanation-aware knowledge selection. The current release includes
+  documentation and templates; original experiment notebooks and raw results
+  were not available when it was assembled.
+authors:
+  - name: "Project contributors"
+keywords:
+  - radiology report summarization
+  - clinical NLP
+  - biomedical NLP
+  - QLoRA
+  - retrieval-augmented generation
+  - knowledge selection

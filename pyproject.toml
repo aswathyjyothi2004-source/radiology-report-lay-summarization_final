@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radiology-report-lay-summarization"
+version = "0.1.0"
+description = "Research scaffold for text-to-text radiology report lay summarization"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "datasets>=2.19",
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "PyYAML>=6.0",
+  "transformers>=4.44",
+  "sentence-transformers>=3.0",
+  "chromadb>=0.5",
+  "evaluate>=0.4",
+  "sacrebleu>=2.4",
+  "rouge-score>=0.1.2",
+  "bert-score>=0.3.13",
+  "nltk>=3.8",
+  "textstat>=0.7",
+  "scikit-learn>=1.4",
+  "torch>=2.2",
+  "peft>=0.12",
+  "accelerate>=0.33",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5", "jupyter>=1.0", "nbformat>=5.10"]
+train = ["bitsandbytes>=0.43; platform_system == 'Linux'"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,13 @@
+{
+  "repository": "radiology-report-lay-summarization",
+  "date": "2026-10-30",
+  "source_manuscript": "Original accessible manuscript copied to paper/manuscript.tex.",
+  "notebooks": "Seven templates; original executable notebooks not found.",
+  "raw_results": "No original metric exports/prediction files found; result folders contain README instructions.",
+  "validation": {
+    "required_files": 24,
+    "notebooks": 7,
+    "secret_pattern_scan": "passed",
+    "notebook_json_validation": "passed"
+  }
+}
