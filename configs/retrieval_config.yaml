@@ -1,0 +1,15 @@
+# Retrieval configuration
+
+vector_database:
+  name: "ChromaDB"
+  collection_name: "biolaysumm_rrg_terms"
+
+embedding:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+
+knowledge_selection:
+  selector_directory: "trained_knowledge_selector"
+  selection_threshold: 0.18
+
+knowledge_base:
+  expert_verified: false
